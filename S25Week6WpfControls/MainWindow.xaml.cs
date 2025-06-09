@@ -46,5 +46,16 @@ namespace S25Week6WpfControls
             else
                 lblOutput.Content = "Please select your gender";
         }
+
+        private void btnGetCity_Click(object sender, RoutedEventArgs e)
+        {
+            lblOutput.Content = cmbCities.Text;
+        }
+
+        private void cmbCities_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (cmbCities.SelectedItem != null)
+                lblOutput.Content = ((ComboBoxItem)cmbCities.SelectedItem).Content;
+        }
     }
 }
