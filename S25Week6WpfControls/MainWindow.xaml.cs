@@ -20,5 +20,31 @@ namespace S25Week6WpfControls
         {
             InitializeComponent();
         }
+
+        private void btnGetHobbies_Click(object sender, RoutedEventArgs e)
+        {
+            string hobbies = "";
+
+            if (chkGolfing.IsChecked == true)
+                hobbies += chkGolfing.Content + "\n";
+            if (chkFishing.IsChecked == true)
+                hobbies += chkFishing.Content + "\n";
+            if (chkSinging.IsChecked == true)
+                hobbies += chkSinging.Content + "\n";
+
+            lblOutput.Content = hobbies;
+        }
+
+        private void btnGetGender_Click(object sender, RoutedEventArgs e)
+        {
+            if (rdoFemale.IsChecked == true)
+                lblOutput.Content = rdoFemale.Content;
+            else if (rdoMale.IsChecked == true)
+                lblOutput.Content = rdoMale.Content;
+            else if (rdoOther.IsChecked == true)
+                lblOutput.Content = rdoOther.Content;
+            else
+                lblOutput.Content = "Please select your gender";
+        }
     }
 }
