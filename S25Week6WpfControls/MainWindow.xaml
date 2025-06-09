@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:S25Week6WpfControls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="450" Width="800" FontSize="16" FontWeight="Bold">
+    <Canvas>
+        <Image Height="93" Canvas.Left="40" Canvas.Top="39" Width="161" Source="/Car.png"/>
 
-    </Grid>
+    </Canvas>
 </Window>
